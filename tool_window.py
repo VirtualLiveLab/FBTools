@@ -88,6 +88,7 @@ editUI = FBEdit()
 window=FBCreateUniqueTool("Tool Window")
 addTargetUI()
 addActorUI()
+addMarkerSetUI()
 # ウィンドウサイズの指定
 window.StartSizeX = 200
 window.StartSizeY = 200
