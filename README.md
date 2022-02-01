@@ -1,0 +1,2 @@
+# FBTools
+MotionBuilderで作業を効率化するためのプラグイン
