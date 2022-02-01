@@ -28,6 +28,9 @@ def setMarkerSet(TargetName : str, ActorName : str):
         [FBSkeletonNodeId.kFBSkeletonLeftCollarIndex, "LeftShoulderTracker"], #左肩
         [FBSkeletonNodeId.kFBSkeletonRightCollarIndex, "RightShoulderTracker"] #右肩
     ]
+
+    if not containActor(ActorName):
+        return False
     
     model = getTargetModel(target=TargetName)
     actor = getActor(ActorName)
@@ -49,6 +52,8 @@ def setMarkerSet(TargetName : str, ActorName : str):
     
         AddTracker(markerSet, tracker, nodeId)
     
+    
+    return True
     # Snap
     
     #actor.Snap(FBRecalcMarkerSetOffset.kFBRecalcMarkerSetOffsetTR)

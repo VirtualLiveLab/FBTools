@@ -1,3 +1,4 @@
+from pickle import TRUE
 from pyfbsdk import*
 
 
@@ -10,6 +11,12 @@ def getTargetModel(target):
 
     return result[0]
 
+def containActor(name:str) ->FBActor:
+    for actor in FBSystem().Scene.Actors:
+        if actor.Name == name:
+            return True
+
+    return False
 def getActor(name:str) -> FBActor:
     result = []
     for actor in FBSystem().Scene.Actors:

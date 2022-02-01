@@ -49,10 +49,14 @@ def onCreateActorBtnClick(control,event):
 
 def onMarkerSetBtnClick(control,event):
     app = FBApplication()
+    if app.CurrentActor is None:
+        FBMessageBox("Fail to create\nCurrent Actor null",control.Caption,"OK")
     name = app.CurrentActor.Name
-    setMarkerSet(editUI.Text, name)
-    FBMessageBox("Create MarkerSet",control.Caption,"OK")
- 
+    isSet = setMarkerSet(editUI.Text, name)
+    if isSet:
+        FBMessageBox("Create MarkerSet",control.Caption,"OK")
+    else:
+        FBMessageBox("Fail to create\n",control.Caption,"OK")
 
 #####################
 ### Actor
