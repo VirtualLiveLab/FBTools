@@ -19,7 +19,7 @@ offset_z = -20
 
 
 def addTargetUI():
-    editUI.Text = "RecordTarget__1_"
+    editUI.Text = "RecordTarget"
     x = FBAddRegionParam(50, FBAttachType.kFBAttachNone, "")
     y = FBAddRegionParam(20, FBAttachType.kFBAttachNone, "")
     w = FBAddRegionParam(100,FBAttachType.kFBAttachNone,"")
