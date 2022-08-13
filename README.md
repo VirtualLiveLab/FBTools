@@ -7,3 +7,7 @@ MotionBuilderで作業を効率化するためのプラグイン
 
 3. テキストボックスにインポートしたファイル名(例えば、`RecordTarget__1_`)を指定して`Create Actor`をすることで録画対象の近くでActorが生成されます
 4. キャラクタに生成したActorもしくは自分が指定したいActorを選択し、`Create Marker`を行うことでマッピングが行われます
+
+
+https://user-images.githubusercontent.com/53074461/184463016-fd72b51d-4c88-4795-b86d-4372b6394864.mp4
+
