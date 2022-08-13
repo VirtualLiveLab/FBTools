@@ -12,8 +12,8 @@ def setMarkerSet(TargetName : str, ActorName : str):
     markerList = [ 
         [FBSkeletonNodeId.kFBSkeletonHeadIndex, "headTracker"], # 頭
         [FBSkeletonNodeId.kFBSkeletonChestIndex, "BodyTracker"], #胸
-        [FBSkeletonNodeId.kFBSkeletonRightElbowIndex, "LeftHandTracker"], #左手首
-        [FBSkeletonNodeId.kFBSkeletonLeftElbowIndex, "RightHandTracker"], #右手首
+        [FBSkeletonNodeId.kFBSkeletonLeftElbowIndex, "LeftHandTracker"], #左手首
+        [FBSkeletonNodeId.kFBSkeletonRightElbowIndex, "RightHandTracker"], #右手首
         [FBSkeletonNodeId.kFBSkeletonLeftShoulderIndex, "LeftElbowTracker"], #左肘
         [FBSkeletonNodeId.kFBSkeletonRightShoulderIndex, "RightElbowTracker"], #右肘
         [FBSkeletonNodeId.kFBSkeletonLeftKneeIndex, "LeftFootTracker"], #左足
